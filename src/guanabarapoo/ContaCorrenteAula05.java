@@ -1,6 +1,6 @@
 package guanabarapoo;
 
-public class Conta {
+public class ContaCorrenteAula05 {
 	
 		//atributos
 		public int numConta;
@@ -10,7 +10,7 @@ public class Conta {
 		private boolean status;
 		
 		//construtores
-		public Conta() {
+		public ContaCorrenteAula05() {
 			this.numConta = numConta; 
 			this.tipo = tipo;
 			this.dono = dono;

@@ -4,7 +4,7 @@ public class Aula05 {
 
 	public static void main(String[] args) {
 		
-	Conta p1 = new Conta();
+	ContaCorrenteAula05 p1 = new ContaCorrenteAula05();
 	p1.setNumConta(4567-8);
 	p1.abrirConta("CC");
 	p1.setDono("Julia de Azevedo");
@@ -14,7 +14,7 @@ public class Aula05 {
 	p1.estadoAtual();		
 	
 	
-	Conta p2 = new Conta();
+	ContaCorrenteAula05 p2 = new ContaCorrenteAula05();
 	p2.setNumConta(4567-9);
 	p2.abrirConta("CP");
 	p2.setDono("Mario Carvalho");
