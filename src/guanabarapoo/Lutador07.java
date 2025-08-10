@@ -1,5 +1,6 @@
 package guanabarapoo;
 
+
 public class Lutador07 {
 
 	private String nome;
@@ -18,8 +19,7 @@ public class Lutador07 {
 		this.nacionalidade = nacionalidade;
 		this.idade = idade;
 		this.altura = altura;
-		this.peso = peso;
-		this.categoria = categoria;
+		this.setPeso(peso);
 		this.vitorias = vitorias;
 		this.derrotas = derrotas;
 		this.empates = empates;
@@ -64,14 +64,24 @@ public class Lutador07 {
 
 	public void setPeso(double peso) {
 		this.peso = peso;
+		this.setCategoria();
 	}
 
 	public String getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	private void setCategoria() {
+		if(peso <52.2) {
+			categoria = "Inválido";
+		} else if (peso <= 70.3) {
+			categoria = "Leve";
+		}else if (peso <=83.9) {
+			categoria = "Médio";
+		}else if (peso <= 120.2) {
+			categoria = "Pesado";
+		}else {
+		 categoria = "Inválido";}
 	}
 
 	public int getVitorias() {
@@ -100,19 +110,35 @@ public class Lutador07 {
 
 	
 	public void apresentar() {
-		
+		System.out.println("--------- HORA DA LUTA ---------");
+		System.out.println("Lutador: " + this.getNome());
+		System.out.println("Origem: " + this.getNacionalidade());
+		System.out.println(this.getIdade() + " anos");
+		System.out.println(this.getAltura() + " m de altura");
+		System.out.println("Pesando: " + this.getPeso());
+		System.out.println("Ganhou: " + this.getVitorias());
+		System.out.println("Perdeu: " + this.getDerrotas());
+		System.out.println("Empatou: " + this.getEmpates());
 	}
 	public void status() {
+		System.out.println("---------RESULTADO---------");
+		System.out.println(this.getNome());
+		System.out.println("é um peso " + this.getCategoria());
+		System.out.println(this.getVitorias() + " vitórias");
+		System.out.println(this.getDerrotas() + " derrotas");
+		System.out.println(this.getEmpates() + " empates");
 		
 	}
 	public void ganharLuta() {
-		
+		this.setVitorias(this.getVitorias() + 1);
 	}
 	public void perderLuta() {
-		
+		this.setVitorias(this.getVitorias() - 1);
 	}
 	public void empatarLuta() {
-		
+		this.setEmpates(this.getEmpates() + 1);
 	}
+
+
 }
 
