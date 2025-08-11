@@ -17,6 +17,8 @@ public class UltraEmjoiCombat07 {
 		L[9] = new Lutador07("Gladiador", "Itália", 31, 1.90, 110.5f, 22, 2, 3); 
 		L[10] = new Lutador07("Furacão", "Argentina", 33, 1.78, 80.0f, 14, 7, 1); 
 		
-		L[5].status();
+		Lutar07 UEC01 = new Lutar07();
+		UEC01.marcarLuta(L[9], L[1]);
+		UEC01.lutar();
 	}
 }
