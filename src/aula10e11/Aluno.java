@@ -8,6 +8,9 @@ public class Aluno extends Pessoa{
 	public void cancelarMatr() {
 		
 	}
+	public void pagarMensalidade() {
+		System.out.println("Pagamento mensalidade de aluno " + this.getNome());
+	}
 	
 	//métodos especiais
 	public int getMatricula() {

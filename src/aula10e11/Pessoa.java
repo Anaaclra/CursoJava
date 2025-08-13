@@ -1,6 +1,6 @@
 package aula10e11;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	private String nome;
 	private int idade;

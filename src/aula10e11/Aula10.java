@@ -5,7 +5,7 @@ public class Aula10 {
 	public static void main(String[] args) {
 		
 		//criei 4 objetos de classes diferentes.
-		Pessoa p1 = new Pessoa();
+		Visitante p1 = new Visitante();
 		Aluno p2 = new Aluno();
 		Professor p3 = new Professor();
 		Funcionario p4 = new Funcionario();
@@ -14,6 +14,7 @@ public class Aula10 {
 		p1.setSexo("Feminino");
 		
 		p2.setNome("Adriano");
+		p2.setMatricula(2345);
 		p2.setIdade(13);
 		p2.setSexo("Masculino");
 		p2.setCurso("Informática");
