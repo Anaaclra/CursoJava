@@ -9,7 +9,7 @@ import model.entities.PessoaFisica;
 import model.entities.PessoaJuridica;
 
 
-public class Program9 {
+public class Program09 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

@@ -11,7 +11,7 @@ import model.entities.ImportedProduct;
 import model.entities.Product3;
 import model.entities.UsedProduct;
 
-public class Program8 {
+public class Program08 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

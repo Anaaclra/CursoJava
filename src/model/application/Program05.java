@@ -6,7 +6,7 @@ import java.util.Scanner;
 import model.entities.Product;
 import model.entities.Product2;
 
-public class Program5 {
+public class Program05 {
 
 	public static void main(String[] args) {
 		
