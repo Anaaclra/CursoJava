@@ -1,4 +1,4 @@
-package model.exception;
+package nelioalves.exception;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
